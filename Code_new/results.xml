@@ -1,0 +1,13 @@
+<testsuite errors="0" failures="3" name="" skips="0" tests="5" time="10.8580830097"><testcase classname="GetLoadBalancersTests" name="test_item_not_found" result="PASSED" /><testcase classname="GetLoadBalancersTests" name="test_method_not_allowed" result="PASSED" /><testcase classname="GetLoadBalancersTests" name="test_get_load_balancers" result="FAILED"><failure message="401 != 200" type="AssertionError">Traceback (most recent call last):
+  File "/home/server/.virtualenvs/cloud_cafe/lib/python2.7/site-packages/cloudroast/getloadbalancers/smoke/test_run.py", line 17, in test_get_load_balancers
+    self.assertEquals(r.status_code, 200)
+AssertionError: 401 != 200
+</failure></testcase><testcase classname="GetLoadBalancersTests" name="test_invalid_name" result="FAILED"><failure message="401 != 200" type="AssertionError">Traceback (most recent call last):
+  File "/home/server/.virtualenvs/cloud_cafe/lib/python2.7/site-packages/cloudroast/getloadbalancers/smoke/test_run.py", line 49, in test_invalid_name
+    self.assertEquals(r.status_code, 200)
+AssertionError: 401 != 200
+</failure></testcase><testcase classname="GetLoadBalancersTests" name="test_invalid_region" result="FAILED"><failure message="401 != 404" type="AssertionError">Traceback (most recent call last):
+  File "/home/server/.virtualenvs/cloud_cafe/lib/python2.7/site-packages/cloudroast/getloadbalancers/smoke/test_run.py", line 57, in test_invalid_region
+    self.assertEquals(r.status_code, 404)
+AssertionError: 401 != 404
+</failure></testcase></testsuite>
